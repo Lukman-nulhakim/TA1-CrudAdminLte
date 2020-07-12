@@ -15,7 +15,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="nama_pendidikan">Nama Pendidikan</label>
-                                        <select class="custom-select @error('nama_pendidikan') is-invalid @enderror" name="nama_pendidikan" id="nama_pendidikan" class="form-control" >
+                                        <select class="custom-select @error('nama_pendidikan') is-invalid @enderror" name="nama_pendidikan" id="nama_pendidikan">
                                             <option value="SD" {{ old('nama_pendidikan') == 'SD' ? 'selected' : '' }}>
                                                 SD
                                             </option>

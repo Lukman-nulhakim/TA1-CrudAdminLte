@@ -25,7 +25,7 @@
                                 <div class="col-xl-6 col-md-6 col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="jenis_kelamin">Jenis Kelamin</label>
-                                        <select class="custom-select @error('jenis_kelamin') is-invalid @enderror" name="jenis_kelamin" id="jenis_kelamin" class="form-control" >
+                                        <select class="custom-select @error('jenis_kelamin') is-invalid @enderror" name="jenis_kelamin" id="jenis_kelamin">
                                             <option value="laki-laki" {{ (old('jenis_kelamin') ?? $karyawan->jenis_kelamin ) == 'laki-laki' ? 'selected' : '' }}>
                                                 Laki-laki
                                             </option>

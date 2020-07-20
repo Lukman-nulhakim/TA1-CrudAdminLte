@@ -59,7 +59,7 @@
                                 <div class="col-xl-6 col-md-6 col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="jabatan_id">Jabatan</label>
-                                        <select class="custom-select @error('jabatan_id') is-invalid @enderror" name="jabatan_id" id="jabatan_id">
+                                        <select class="custom-select @error('jabatan') is-invalid @enderror" name="jabatan_id" id="jabatan_id">
                                             @foreach ($jabatans as $jabatan)
                                                 <option value="{{ $jabatan->id }}" {{ old('jabatan_id') == $jabatan->jabatan ? 'selected' : '' }}>
                                                     {{ $jabatan->jabatan }}
